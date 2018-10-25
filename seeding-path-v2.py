@@ -31,7 +31,7 @@ for i in range(plantCountLong): # for loop for every plant long
 #new_plant = app.add_plant(x = x,y = y)
 
 
-plant_pos_x_get =   plant_pos_x.append(get_current_position()
+plant_pos_x_get =   plant_pos_x.append(get_current_position())
 
 
 def moveAbs(x, y, z):
