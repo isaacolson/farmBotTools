@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Seeding Path Farmware"""
 #Import libraries
-#from farmware_tools import device, get_config_value, app
+from farmware_tools import device, get_config_value, app
 
 # Load inputs from Farmware page widget specified in manifest file
 pos_x = get_config_value('Seeding Path', 'start_x')#Starting X position of Pathway
