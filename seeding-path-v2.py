@@ -22,12 +22,14 @@ for i in range(plantCountLong): # for loop for every plant long
 	if sense:
 		for j in range(plantCountWide):
 			plant_pos_y = plant_pos_y.append(plantLength*j+pos_y)
-			moveAbs(plant_pos_x[i],plant_pos_y[j],pos_z)
+			device.moveAbs(plant_pos_x[i],plant_pos_y[j],pos_z)
+                        device.wait(1000)
 		sense = 0
 	else:
 		for j in range(-1*cellCountY,0):
 			plant_pos_y = plant_pos_y.append(plantLength*j+pos_y)
-                        moveAbs(plant_pos_x[i],plant_pos_y[j],pos_z)
+                        device.moveAbs(plant_pos_x[i],plant_pos_y[j],pos_z)
+                        device.wait(1000)
 		sense = 1
 
 #new_plant = app.add_plant(x = x,y = y)
