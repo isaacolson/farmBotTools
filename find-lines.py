@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-imgloc = r""
+imgloc = r"" #enter path to picture here, between the quotes ("")'s with backslashes (\)'s denoting 'folder levels'
 img = cv2.imread(imgloc)
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray,50,150,apertureSize = 3)
