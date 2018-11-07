@@ -1,5 +1,5 @@
 {
- "package": "Legacy Seeding Path",
+ "package": "Legacy Seeder",
  "language": "python",
  "author": "Sac Hydroponics",
  "description": "Moves FarmBot arm to plant, seed tray, repeat.",
