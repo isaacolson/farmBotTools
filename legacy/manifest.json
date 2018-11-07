@@ -10,3 +10,20 @@
  "executable": "python",
  "args": ["legacy-seeding-path-master/seeding_path.py"]
 }
+{
+ "package": "Legacy Seeding Path",
+ "language": "python",
+ "author": "Sac Hydroponics",
+ "description": "Moves FarmBot arm to plant, seed tray, repeat.",
+ "version": "1.1.0",
+ "min_os_version_major": 6,
+ "url": "https://raw.githubusercontent.com/4thgear/seeding-path/legacy/master/manifest.json",
+ "zip": "https://github.com/4thgear/seeding-path/legacy/archive/master.zip",
+ "executable": "python",
+ "args": ["seeding-path-master/legacySeeder.py"],
+ "config": [
+   {"name": "start_x", "label": "Start X(mm)", "value": 0 },
+   {"name": "start_y", "label": "Start Y(mm)", "value": 0 },
+   {"name": "start_z", "label": "Start Z(mm)", "value": 0 },
+ ]
+}
