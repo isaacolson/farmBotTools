@@ -40,9 +40,9 @@ for i in range(len(plantLocation)):
     moveAbs(seedTrayX, seedTrayY, safeZ)
     moveAbs(seedTrayX, seedTrayY, safeZ-10)
     moveAbs(seedTrayX, seedTrayY, safeZ)
-    moveAbs(plantLocation[i][0], plantLocation[i][1], safeZ)
-    moveAbs(plantLocation[i][0], plantLocation[i][1], safeZ-10)
-    moveAbs(plantLocation[i][0], plantLocation[i][1], safeZ)
+    moveAbs(plantLocation[i][0]+pos_x, plantLocation[i][1]+pos_y, safeZ)
+    moveAbs(plantLocation[i][0]+pos_x, plantLocation[i][1]+pos_y, safeZ-10)
+    moveAbs(plantLocation[i][0]+pos_x, plantLocation[i][1]+pos_y, safeZ)
     
 moveAbs(toolExtractX, seedToolY, seedToolZ)
 moveAbs(seedToolX, seedToolY, seedToolZ)
