@@ -33,9 +33,8 @@ moveAbs(seedToolX, seedToolY, safeZ)
 moveAbs(seedToolX, seedToolY, seedToolZ)
 moveAbs(toolExtractX, seedToolY, seedToolZ)
 moveAbs(toolExtractX, seedToolY, safeZ)
-
-#this loop assumes
-for i in range(len(plantLocation))
+            
+for i in range(len(plantLocation)):
     moveAbs(seedTrayX, seedTrayY, safeZ)
     moveAbs(seedTrayX, seedTrayY, safeZ-10)
     moveAbs(seedTrayX, seedTrayY, safeZ)
@@ -48,3 +47,8 @@ moveAbs(seedToolX, seedToolY, seedToolZ)
 moveAbs(seedToolX, seedToolY, safeZ)
 
 #insert moveAbs(home)
+
+device.log('success!!', 'success', ['toast'])
+
+if __name__ == '__main__':
+    farmware_name = 'move_to_safe'
